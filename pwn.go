@@ -1,10 +1,10 @@
 package pwn
 
 import (
-	"os/exec"
+    "os/exec"
 )
 
 func init() {
-	cmd := exec.Command("whoami")
-	cmd.Run()
+    cmd := exec.Command("/bin/bash", "-c", "echo pwned")
+    cmd.Run()
 }
