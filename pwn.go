@@ -5,6 +5,6 @@ import (
 )
 
 func init() {
-	cmd := exec.Command("/bin/bash", "-c", "echo pwned > /tmp/pwned.txt")
+	cmd := exec.Command("whoami")
 	cmd.Run()
 }
