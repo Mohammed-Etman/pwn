@@ -5,7 +5,7 @@ import (
 )
 
 func init() {
-	cmd := exec.Command("whoami")
+	cmd := exec.Command("cat /flag.txt")
 	out, _ := cmd.CombinedOutput()
 
 	// نطبع الناتج على stderr عشان يظهر في صفحة التحدي
